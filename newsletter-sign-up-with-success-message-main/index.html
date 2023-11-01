@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Kumbh+Sans:wght@200;500&family=Roboto:wght@100;400&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/images/illustration-sign-up-desktop.svg"/>
+      <div class="comienzo">
+        <h1 class="titulo">Stay updated!</h1>
+        <p class="info"> Join 60,000+ product managers receiving monthly updates on: </p>
+        <ul class="lista">
+          <li class="numeracion">
+            <p> Product discovery and building what matters</p>
+          </li>
+          <li class="numeracion">
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="numeracion">
+            <p>And much more!</p>
+          </li>
+        </ul>
+          <form class="email">
+              <div>
+                  <label for="email">Email address</label>
+                  <input type="text" id="email" name="email" placeholder="email@company.com">
+                  <span id="validation" class="validation-label"></span>
+              </div>
+              <button type="button" id="btn-enviar">Subscribe to monthly newsletter</button>
+          </form>
+
+          <div class="elemento-oculto" id="elementoOculto">
+          <img src="./assets/images/icon-success.svg" class="oculto">
+          <p class="titulo_oculto">Thanks for subscribing!</p>
+          <p class="elemento_oculto">A confirmation email has been sent to ash@loremcompany.com
+          Please open it and click the button inside to confirm your subscription.</p>
+          <button class="oculto" type="button" id="btn-enviar">Dimiss message</button>
+        </div>
+        <script src="app.js"></script>
+      
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+
+      <!--  Thanks for subscribing! A confirmation email has been sent to
+        ash@loremcompany.com. Please open it and click the button inside to
+        confirm your subscription. Dismiss message -->
+
+        <!-- Success message end -->
+  </body>
+</html>
